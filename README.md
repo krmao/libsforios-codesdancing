@@ -43,6 +43,7 @@ git push origin --tags
 5. how to use
 
 ```ruby
+source 'https://cdn.cocoapods.org/'
 source 'https://github.com/krmao/libsforios.git'
 pod 'CodesDancing', '~>0.0.1'
 ```
