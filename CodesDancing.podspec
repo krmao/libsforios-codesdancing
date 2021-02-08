@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  CodesDancing.
+  source 'https://cdn.cocoapods.org/'
+  source 'https://github.com/krmao/libsforios.git'
+  pod 'CodesDancing', '~>0.0.1'
                        DESC
 
   s.homepage         = 'https://github.com/krmao/libsforios-codesdancing'
@@ -41,7 +43,7 @@ Pod::Spec.new do |s|
     m.dependency 'AFNetworking', '~> 4.0'
     m.dependency 'SDWebImage', '~> 5.0'
     m.dependency 'YYModel'
-    m.libraries = 'z','bz2.1.0'
+    m.libraries = 'z','bz2.1.0' # can't include 'lib' prefix and '.xxx' suffix, such as 'libz.tbd', 'libbz2.1.0.tbd' 
   end
 
   # s.libraries = 'c++','z'
