@@ -17,6 +17,7 @@ CodesDancing is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/krmao/libsforios.git'
 pod 'CodesDancing', '~>0.0.1'
 ```
 
@@ -32,6 +33,16 @@ CodesDancing is available under the MIT license. See the LICENSE file for more i
 1. pod lib create CodesDancing
 2. set libraries = 'z','bz2.1.0' # can't include 'lib' prefix and '.xxx' suffix, such as 'libz.tbd', 'libbz2.1.0.tbd' 
 3. git push and add git tag to version
-3. pod lib lint --allow-warnings
-4. pod repo push LeelenIotPodSpecs LeelenNetwork.podspec --allow-warnings
-5. pod 'CodesDancing', '~>0.0.1'
+
+```ruby
+git tag -a 0.0.1 -m 'version 0.0.1'
+git push origin --tags
+```
+
+4. pod lib lint --allow-warnings &&  pod repo push krmao CodesDancing.podspec --allow-warnings
+5. how to use
+
+```ruby
+source 'https://github.com/krmao/libsforios.git'
+pod 'CodesDancing', '~>0.0.1'
+```
