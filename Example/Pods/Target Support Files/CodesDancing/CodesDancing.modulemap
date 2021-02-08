@@ -1,0 +1,6 @@
+framework module CodesDancing {
+  umbrella header "CodesDancing-umbrella.h"
+
+  export *
+  module * { export * }
+}

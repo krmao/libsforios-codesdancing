@@ -1,0 +1,6 @@
+framework module Pods_CodesDancing_Tests {
+  umbrella header "Pods-CodesDancing_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

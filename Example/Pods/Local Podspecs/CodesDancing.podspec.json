@@ -1,0 +1,49 @@
+{
+  "name": "CodesDancing",
+  "version": "0.1.0",
+  "summary": "A short description of CodesDancing.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/767709667@qq.com/CodesDancing",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "767709667@qq.com": "kr.mao@ctrip.com"
+  },
+  "source": {
+    "git": "https://github.com/767709667@qq.com/CodesDancing.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "subspecs": [
+    {
+      "name": "LibraryBase",
+      "source_files": "CodesDancing/Classes/LibraryBase/**/**/**/*.{h,m,mm}",
+      "public_header_files": "Pod/Classes/LibraryBase/**/**/**/*.h",
+      "dependencies": {
+        "SSZipArchive": [
+
+        ],
+        "MBProgressHUD": [
+          "~> 1.2.0"
+        ],
+        "AFNetworking": [
+          "~> 4.0"
+        ],
+        "SDWebImage": [
+          "~> 5.0"
+        ],
+        "YYModel": [
+
+        ]
+      },
+      "libraries": [
+        "z",
+        "bz2.1.0"
+      ]
+    }
+  ]
+}
