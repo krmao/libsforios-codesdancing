@@ -17,13 +17,21 @@ CodesDancing is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CodesDancing'
+pod 'CodesDancing', '~>0.0.1'
 ```
 
 ## Author
 
-767709667@qq.com, kr.mao@ctrip.com
+767709667@qq.com
 
 ## License
 
 CodesDancing is available under the MIT license. See the LICENSE file for more info.
+
+## Create steps
+1. pod lib create CodesDancing
+2. set libraries = 'z','bz2.1.0' # can't include 'lib' prefix and '.xxx' suffix, such as 'libz.tbd', 'libbz2.1.0.tbd' 
+3. git push and add git tag to version
+3. pod lib lint --allow-warnings
+4. pod repo push LeelenIotPodSpecs LeelenNetwork.podspec --allow-warnings
+5. pod 'CodesDancing', '~>0.0.1'
