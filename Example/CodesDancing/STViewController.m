@@ -7,7 +7,7 @@
 //
 
 #import "STViewController.h"
-#import "STBus.h"
+#import "STBusManager.h"
 
 @interface STViewController ()
 

@@ -32,7 +32,7 @@
 #import "NSNotificationCenter+STExtension.h"
 #import "NSString+STExtension.h"
 #import "NSUserDefaults+STExtension.h"
-#import "STMacros.h"
+#import "STBaseMacros.h"
 #import "StringUtil.h"
 #import "STSingleton.h"
 #import "UIDevice+STExtension.h"
