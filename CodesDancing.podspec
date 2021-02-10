@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CodesDancing'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'CodesDancing'
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   source 'https://cdn.cocoapods.org/'
   source 'https://github.com/krmao/libsforios.git'
-  pod 'CodesDancing', '~>0.0.1'
+  pod 'CodesDancing', '~>0.0.2'
                        DESC
 
   s.homepage         = 'https://github.com/krmao/libsforios-codesdancing'
