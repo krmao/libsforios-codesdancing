@@ -1,19 +1,19 @@
 {
   "name": "CodesDancing",
-  "version": "0.1.0",
-  "summary": "A short description of CodesDancing.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/767709667@qq.com/CodesDancing",
+  "version": "0.0.1",
+  "summary": "CodesDancing",
+  "description": "source 'https://cdn.cocoapods.org/'\nsource 'https://github.com/krmao/libsforios.git'\npod 'CodesDancing', '~>0.0.1'",
+  "homepage": "https://github.com/krmao/libsforios-codesdancing",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "767709667@qq.com": "kr.mao@ctrip.com"
+    "767709667@qq.com": "767709667@qq.com"
   },
   "source": {
-    "git": "https://github.com/767709667@qq.com/CodesDancing.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/krmao/libsforios-codesdancing.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "9.0"

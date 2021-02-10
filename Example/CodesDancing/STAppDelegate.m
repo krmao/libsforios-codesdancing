@@ -7,12 +7,30 @@
 //
 
 #import "STAppDelegate.h"
+#import "CodesDancing/STInitializer.h"
+#import "CodesDancing/STBridgeDefaultCommunication.h"
 
 @implementation STAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+    //region config bridge
+    ConfigBridge *configBridge = [ConfigBridge new];
+    configBridge.bridgeHandler = ^(UIViewController * _Nullable viewController, NSString * _Nullable functionName, NSString * _Nullable params, NSString * _Nullable callBackId, BridgeHandlerCallback _Nullable callback){
+        [STBridgeDefaultCommunication handleBridge:viewController functionName:functionName params:params callBackId:callBackId callback:callback];
+    };
+    //endregion
+
+    //region config
+    Config *config = [Config new];
+    config.application = self;
+    config.appDebug = TRUE;
+    config.configBridge = configBridge;
+    //endregion
+
+    [STInitializer initialApplication:config];
     return YES;
 }
 
