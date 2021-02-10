@@ -11,6 +11,9 @@
 @implementation ConfigBridge
 @end
 
+@implementation ConfigBundle
+@end
+
 @implementation Config
 @end
 
