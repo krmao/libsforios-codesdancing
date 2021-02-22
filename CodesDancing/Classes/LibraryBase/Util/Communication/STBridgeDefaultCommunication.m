@@ -12,10 +12,10 @@
 @implementation STBridgeDefaultCommunication
 +(void) handleBridge:(nullable UIViewController *) viewController functionName:(nullable NSString *) functionName params:(nullable NSString *) params callBackId:(nullable NSString *) callBackId callback: (nullable BridgeHandlerCallback) callback{
     NSDictionary* resultDict = [NSMutableDictionary new];
-    if (viewController == nil) {
-        callback(callBackId, [STJsonUtil arrayOrDictionayToJsonString:resultDict]);
-        return;
-    }
+    // if (viewController == nil) {
+    //     callback(callBackId, [STJsonUtil arrayOrDictionayToJsonString:resultDict]);
+    //     return;
+    // }
     
     NSDictionary* bridgeParamsDict = [STJsonUtil jsonStringToArrayOrDictionary:params];
 
