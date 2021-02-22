@@ -19,7 +19,7 @@ it, simply add the following line to your Podfile:
 ```ruby
   source 'https://cdn.cocoapods.org/'
   source 'https://github.com/krmao/libsforios.git'
-  pod 'CodesDancing', '~>0.0.2'
+  pod 'CodesDancing', '~>0.0.3'
 ```
 
 ## Author
@@ -47,7 +47,7 @@ CodesDancing is available under the MIT license. See the LICENSE file for more i
 
   Pod::Spec.new do |s|
     s.name             = 'CodesDancing'
-    s.version          = '0.0.2'
+    s.version          = '0.0.3'
     s.summary          = 'CodesDancing'
 
   # This description is used to generate tags and improve search results.
@@ -104,7 +104,7 @@ CodesDancing is available under the MIT license. See the LICENSE file for more i
   git add .
   git commit -m "commit and push"
   git push
-  git tag -a 0.0.1 -m 'version 0.0.1'
+  git tag -a 0.0.3 -m 'version 0.0.3'
   git push origin --tags
   git tag # show tags
   ```
@@ -119,5 +119,5 @@ CodesDancing is available under the MIT license. See the LICENSE file for more i
   ```ruby
   source 'https://cdn.cocoapods.org/'
   source 'https://github.com/krmao/libsforios.git'
-  pod 'CodesDancing', '~>0.0.1'
+  pod 'CodesDancing', '~>0.0.3'
   ```
